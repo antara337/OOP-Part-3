@@ -1,5 +1,6 @@
 from app.operations import *
 
+
 class Calculation:
     """my abstract base calculation class"""
 
@@ -10,6 +11,7 @@ class Calculation:
     def __init__(self, val1, val2):
         self.val1 = val1
         self.val2 = val2
+        self.result = None
 
     def __repr__(self):
         return f'Operation: {type(self)}, (val1={self.val1}, val2={self.val2}, result={self.get_result()})'
@@ -29,6 +31,7 @@ class Calculation:
     def get_result(self):
         """Get the result of a calculation"""
         return self.result
+
 
 class Addition(Calculation):
     """My Addition Calculation Class"""

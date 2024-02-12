@@ -1,6 +1,7 @@
 from app.calculations import Addition, Subtraction, Multiplication, Division
 from app.history import History
 
+
 class Calculator:
     history = History()
 

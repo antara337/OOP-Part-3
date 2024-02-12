@@ -1,4 +1,4 @@
-from app.calculations import Calculation
+
 
 class History(list):
     """Initialized the history object and calls the list super init"""
